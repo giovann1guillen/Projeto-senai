@@ -1,2 +1,9 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using Projeto-Senai.Model;
+
+Usuario usuario = new Usuario()
+usuario.Nome = "Rogerinho";
+usuario.senha = "senha1234";
+
+ExemploSenaiContext context = new ExemploSenaiContext;
+context.add(usuario);
+context.savechanges();
