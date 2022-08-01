@@ -1,9 +1,9 @@
-﻿using Projeto-Senai.Model;
+﻿using Projeto_senai.Model;
 
-Usuario usuario = new Usuario()
+Usuario usuario = new Usuario();
 usuario.Nome = "Rogerinho";
-usuario.senha = "senha1234";
+usuario.Senha = "senha1234";
 
-ExemploSenaiContext context = new ExemploSenaiContext;
-context.add(usuario);
-context.savechanges();
+ExemploSenaiContext context = new ExemploSenaiContext();
+context.Add(usuario);
+context.SaveChanges();
