@@ -115,8 +115,8 @@ listadjestivos.Add("Bondoso");
 
 Random rnd = new Random();
 
-int listNomeindex = rnd.Next(listNome.Count);
-int listsobrenomeindex = rnd.Next(listsobrenome.Count);
+string listNomeindex = rnd.Next(listNome.Count);
+string listsobrenomeindex = rnd.Next(listsobrenome.Count);
 
 Console.WriteLine(listNome[listNomeindex]);
 Console.WriteLine(listsobrenome[listsobrenomeindex]);
