@@ -115,8 +115,19 @@ listadjestivos.Add("Bondoso");
 
 Random rnd = new Random();
 
-string listNomeindex = rnd.Next(listNome.Count);
-string listsobrenomeindex = rnd.Next(listsobrenome.Count);
+string senhacaracter = "";
 
-Console.WriteLine(listNome[listNomeindex]);
-Console.WriteLine(listsobrenome[listsobrenomeindex]);
+int listNomeindex = rnd.Next(listNome.Count);
+int listsobrenomeindex = rnd.Next(listsobrenome.Count);
+int listobjetosindex = rnd.Next(listobjetos.Count);
+int listadjestivosindex = rnd.Next(listadjestivos.Count);
+
+for(var i = 0; i<10; i++)
+{
+    senhacaracter += listcaracteres[rnd.Next(0, listcaracteres.Count)];
+}
+
+
+Console.WriteLine(listNome[listNomeindex] + " " + listsobrenome[listsobrenomeindex]);
+Console.WriteLine(listobjetos[listobjetosindex] + " são " + listadjestivos[listadjestivosindex]);
+Console.WriteLine(senhacaracter);
